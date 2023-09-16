@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Invoices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="styleshee" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .vertical-line {
+            border-right: 1px inset;
+            height: min-content;
+            border-color: black;
+        }
+
+        .btn_nav {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        button {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col-3 row">
+                <div class="col vertical-line btn_nav">
+                    Facturas
+                </div>
+                <div class="col vertical-line btn_nav">
+                    Revisión
+                </div>
+                <div class="col vertical-line btn_nav">
+                    Aprobación
+                </div>
+            </div>
+            <div class="col-2 offset-7">
+                <select class="form-control">
+                    <option class="saa" value=""> &#xf007; USUARIO</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./assets/LOGO1.png" width="150" class="rounded mx-auto d-block">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+
+                <label for="" class="col-sm-4 col-form-label">Facturas</label>
+                <select class="form-control">
+                    <option class="saa" value="1"> Aprobadas</option>
+                    <option class="saa" value="2"> Canceladas</option>
+                    <option class="saa" value="3"> Pendientes</option>
+                    <option class="saa" value="4"> Novedades</option>
+                    <option class="saa" value="5"> Rechazadas</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="display-5 text-center">
+                    <b>
+                        Aprobación de facturas
+                    </b>
+                </h4>
+            </div>
+        </div>
+        <div class="row" style="margin-top:30px;">
+            <div class="col-4 offset-4">
+                <form>
+                    <div class="mb-4 row">
+                        <label for="inputFecha" class="col-sm-4 col-form-label"><b>Fecha:</b></label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control" id="inputFecha">
+                        </div>
+                    </div>
+                    <div class="mb-4 row">
+                        <label for="inputIdFactura" class="col-sm-4 col-form-label"><b>Id factura:</b></label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="inputIdFactura">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" style="margin-top:30px;">
+            <div class="col text-center">
+                <button class="btn btn-success">
+                    Siguiente
+                </button>
+            </div>
+        </div>
+        <div class="row" style="margin-top:30px;">
+            <div class="col">
+                <button class="btn btn-secondary">
+                    Regresar
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
